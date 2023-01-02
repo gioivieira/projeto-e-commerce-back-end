@@ -1,0 +1,45 @@
+POST https://labecommerce-je7x.onrender.com/users
+Content-Type: application/json
+
+{
+    "name": "Eloisa Avelino da Silva",
+    "email": "eloisa@gmail.com",
+    "password": "12345678"
+}
+
+###
+
+POST https://labecommerce-je7x.onrender.com/products
+Content-Type: application/json
+
+{
+    "name": "Box Fazendo Meu Filme",
+    "price": "234.90",
+    "imageUrl": "https://images-americanas.b2w.io/produtos/1748654055/imagens/livro-box-serie-fazendo-meu-filme-capas-novas-serie-completa/1748654055_1_xlarge.jpg"
+}
+
+###
+
+POST https://labecommerce-je7x.onrender.com/purchases
+Content-Type: application/json
+
+{
+    "userId": "1670070431709",
+    "productId": "1669997197595",
+    "quantity": 1
+}
+
+### 
+
+GET https://labecommerce-je7x.onrender.com/users
+Content-Type: application/json
+
+###
+
+GET https://labecommerce-je7x.onrender.com/products?product_name=Box &products_order=desc
+Content-Type: application/json
+
+###
+
+GET https://labecommerce-je7x.onrender.com/users/1669995633180/purchases
+Content-Type: application/json
